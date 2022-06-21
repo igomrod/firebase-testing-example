@@ -4,18 +4,20 @@
   "description": "Example project testing firebase locally using emulators",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --detectOpenHandles --forceExit"
   },
   "author": "Ivan Gomez (i.gomez.rdguez@gmail.com)",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^28.1.2",
     "jest": "^28.1.1",
+    "node-fetch": "^3.2.6",
     "ts-jest": "^28.0.5",
     "typescript": "^4.7.4"
   },
   "dependencies": {
     "dotenv": "^16.0.1",
-    "firebase": "^9.8.3"
+    "firebase": "^9.8.3",
+    "firebase-admin": "^11.0.0"
   }
 }
